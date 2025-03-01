@@ -95,3 +95,4 @@ class TransferRequest:
     def transfer_code(self):
         """Returns the md5 signature (transfer code)"""
         return hashlib.md5(str(self).encode()).hexdigest()
+
